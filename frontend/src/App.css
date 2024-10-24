@@ -1,0 +1,14 @@
+body {
+    background-color: #040404; 
+    color: #333; 
+    
+}
+.footer{
+    width: 100%;
+
+}
+
+.wrapper {
+    background-color: #f9f9f9; 
+    min-height: 100vh;
+}

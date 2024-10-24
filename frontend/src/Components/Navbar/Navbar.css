@@ -1,0 +1,96 @@
+/* Navbar.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  height: 70px;
+  background-color: #000; /* Black background */
+  color: #fff; /* White text color for contrast */
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Deeper shadow for better depth */
+}
+
+.imglogonavbar {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px; /* More pronounced rounding */
+  transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+.imglogonavbar:hover {
+  transform: scale(1.1); /* Enlarge logo on hover */
+}
+
+.rightsidenavbar {
+  text-align: right;
+  margin-right: 20px; /* Adjusted for better alignment */
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+  font-weight: bold;
+}
+
+.rightsidenavbar div {
+  cursor: pointer;
+}
+
+.rightsidenavbar a {
+  text-decoration: none;
+  color: #fff; /* White text color */
+}
+
+.first,
+.second,
+.third,
+.fourth {
+  margin: 0 10px; /* Adjusted spacing */
+  border: 2px solid transparent; /* Border for hover effect */
+  color: #fff; /* White text color */
+  border-radius: 50px; /* Fully rounded corners */
+  font-weight: 600;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, rgba(6, 78, 231, 0.6), rgba(0, 0, 0, 0)) 0 0 / 200% no-repeat; /* Gradient background */
+  transition: background-position 0.8s, color 0.3s, border-color 0.3s; /* Smooth transition effects */
+}
+
+.first:hover,
+.second:hover,
+.third:hover,
+.fourth:hover {
+  background-position: 100% 0; /* Move gradient on hover */
+  color: #000; /* Dark text color for contrast */
+  border-color: rgba(6, 78, 231, 0.6); /* Border color on hover */
+  background-color: rgb(161, 161, 221); /* Background color for hover effect */
+}
+
+.active-link {
+  background-color: #fff; /* Background for the active link */
+  color: #000; /* Text color for the active link */
+  border-color: rgba(6, 78, 231, 0.6); /* Border color for active link */
+}
+
+.login-button {
+  margin-left: auto;
+}
+
+.login-button button {
+  background-color: #f1c40f; /* Gold background */
+  color: #000; /* Black text color */
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 25px; /* Rounded button */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+.login-button button:hover {
+  background-color: #e1b50f; /* Darker gold on hover */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}

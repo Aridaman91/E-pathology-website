@@ -1,0 +1,59 @@
+/* Links.css */
+
+.secondtime {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  background-color: #000; /* Black background */
+  padding: 40px; /* Optional: to add space around the content */
+}
+
+.mainbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #222; /* Dark grey background for boxes to contrast with black */
+  border-radius: 10px;
+  margin: 20px;
+  max-width: 300px;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for shadow and transform */
+}
+
+.mainbox:hover {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); /* Glowing effect */
+  transform: scale(1.05); /* Slightly enlarge the box on hover */
+}
+
+.LOGO {
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.words {
+  font-size: 16px;
+  color: #ddd; /* Light grey text to contrast with dark background */
+  margin-bottom: 15px;
+}
+
+button {
+  background-color: #f1c40f; /* Gold button */
+  color: #000; /* Black text color */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #e1b50f; /* Slightly darker gold on hover */
+  transform: scale(1.05);
+}

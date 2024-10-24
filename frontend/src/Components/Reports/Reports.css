@@ -1,0 +1,122 @@
+/* Reports Component Styling */
+.reprt {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    width: 100%;
+   
+    margin-top: 0px; 
+    height: 100vh;
+    width: 94vw;
+}
+
+.workreport {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex-direction: coloumn;
+}
+
+.reportchat {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.statusTitle {
+    flex: 1;
+    text-align: center;
+    padding: 10px 0;
+    cursor: pointer;
+    font-weight: bold;
+    color: #555;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.statusTitle:hover {
+    background-color: #7c7ad7;
+}
+
+.activereportchat {
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 4px;
+}
+
+.reportlist {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between items */
+}
+
+.ststusrowlist {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.statusname {
+    font-weight: bold;
+    flex: 2; /* Adjust based on desired width */
+}
+
+.statusdetail {
+    display: flex;
+    flex-direction: column;
+    flex: 3; /* Adjust based on desired width */
+}
+
+.statusdrname {
+    font-size: 14px;
+    color: #333;
+}
+
+.statusdrdate {
+    font-size: 12px;
+    color: #777;
+}
+
+.ststusbtn {
+    flex: 1; /* Adjust based on desired width */
+    text-align: right;
+}
+
+.ststusbtn button {
+    padding: 6px 12px;
+    border: none;
+    background-color: #ff4d4d;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.ststusbtn button:hover {
+    background-color: #cc0000;
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 200px; /* Adjust as needed */
+    margin-right: 20px;
+    background-color: white;
+  }
+  
+  .search-bar input {
+    width: 100%;
+    padding: 8px;
+    background-color: white;
+    box-sizing: border-box;
+    color: black;
+  }
+  
+  .search-bar i {
+    margin-left: -30px; /* Adjust based on input padding */
+    cursor: pointer;
+  }

@@ -1,0 +1,51 @@
+/* src/Components/Header.css */
+
+.statistics-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+  background: url('path-to-your-background-image.jpg') no-repeat center center;
+  background-size: cover;
+  color: rgba(145, 227, 145, 0.752);
+}
+
+.statistics-heading {
+  width: 100%;
+  text-align: center;;
+  font-size: 2em;
+  color: rgb(242, 236, 236); 
+  margin-bottom: 20px; 
+}
+
+
+.statistics-card {
+  background: rgba(244, 241, 241, 0.8);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+  margin: 10px;
+  width: 250px;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  backdrop-filter: blur(10px);
+}
+
+.statistics-card.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+.statistics-label {
+  font-size: 1.2em;
+  color: #0a0a09;
+  margin-bottom: 10px;
+}
+
+.statistics-value {
+  font-size: 1.5em;
+  color: #12110e;
+}

@@ -1,0 +1,29 @@
+.statistics-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    background: #f9f9f9;
+  }
+  
+  .statistics-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+    width: 250px; /* Fixed width for consistency */
+  }
+  
+  .statistics-label {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .statistics-value {
+    font-size: 1.5em;
+    color: #555;
+  }
+  

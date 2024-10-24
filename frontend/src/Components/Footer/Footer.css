@@ -1,0 +1,51 @@
+/* Ensure the wrapper takes at least the full viewport height */
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #000; /* Black background for the entire site */
+  color: #fff; /* White text color for better contrast */
+}
+
+/* Footer Styling */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #333; /* Dark background for the footer */
+  color: #fff; /* White text color */
+  margin-top: auto; 
+  width: 100%; /* Ensures the footer spans the full width */
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow for a lifted effect */
+}
+
+/* Flex items in footer */
+.section1, .section2, .section3, .section4 {
+  flex: 1;
+  padding: 10px;
+}
+
+/* Ensures images maintain their aspect ratio */
+.hj {
+  width: 100px;
+  height: auto;
+}
+
+/* Header Styling */
+h4 {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #fff; /* White text color */
+}
+
+/* Link Styling */
+a {
+  color: #007bff; /* Bright blue for links */
+  text-decoration: none;
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+a:hover {
+  color: #0056b3; /* Darker blue on hover */
+  text-decoration: underline; /* Underline on hover */
+}

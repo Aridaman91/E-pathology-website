@@ -1,0 +1,94 @@
+/* About.css */
+
+.about-us {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text for contrast */
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .about-us::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1), rgba(0,0,0,0.1));
+    opacity: 0.3;
+    z-index: 0;
+  }
+  
+  .leftabout {
+    flex: 1;
+    padding-right: 20px;
+    z-index: 1;
+  }
+  
+  .leftabout h2 {
+    font-size: 3rem;
+    color: #f1c40f; /* Gold color for heading */
+    margin-bottom: 20px;
+    font-weight: bold;
+    position: relative;
+  }
+  
+  .leftabout h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 60px;
+    height: 4px;
+    background: #f1c40f; /* Match heading color */
+    border-radius: 2px;
+  }
+  
+  .leftabout p {
+    font-size: 1.1rem;
+    color: #ecf0f1; /* Light grey text */
+    line-height: 1.8;
+    text-align: justify;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  .rightabout {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+  
+  .rightabout img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    border: 5px solid #f1c40f; /* Gold border to match the heading */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    transform: scale(1);
+    transition: transform 0.3s ease;
+  }
+  
+  .rightabout img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
